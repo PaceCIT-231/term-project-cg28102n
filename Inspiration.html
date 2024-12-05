@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Inspiration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    </head>
+    <body>
+        <button id="darkmode" onclick="darkMode()">Dark Mode</button>
+        <h1>MUSTB</h1>
+        <h3>Inspiration</h3>
+     <nav>
+        <ul> 
+            <li> <a href="Home.html">Home </a></li>
+         <li> <a href="About.html">About </a></li>
+     <li> <a href="Inspiration.html">Inspiration </a></li>
+     <li> <a href="Watch.html">Watch </a></li></ul></nav>
+        <main>Below is a collection of images designed to spark inspiration. They are the top 5 selected from your submissions and are updated on a weekly basis. The form to submit photos is located at the bottom of the page. You could see your photo next week!
+        </main>
+
+        <img src="assets/images/colorful.jpeg" alt="Colorful Decor" height=300 width=250
+            style="max-width: 1000px">
+            <img src="assets/images/pretty.jpeg" alt="Pretty Decor" height=300 width=250
+            style="max-width: 1000px">
+            <img src="assets/images/frames.jpeg" alt="Frame Decor" height=300 width=250
+            style="max-width: 1000px">
+            <img src="assets/images/Greens.jpeg" alt="Green Decor" height=300 width=250
+            style="max-width: 1000px">
+            <img src="assets/images/Cart.jpeg" alt="Cart Decor" height=300 width=250
+            style="max-width: 1000px">
+            </html>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="closeSummary" class="close">&times;</span>
+                    <h2>Photo Submission</h2>
+                </div>
+                <div class="container">
+                    <div id="summary-body" class="modal-body">
+                        
+                    </div>
+                    <div class="modal-body">
+                        <form name="Photo Submission" id="photoSubmission" action="thankyou.html" method="get">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" required><br>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required><br>
+                            <label for="fileExample">File Input</label>
+                            <input type="file" id="fileExample" name="fileExample"><br>
+                            <input type="submit" name="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let modal = document.getElementById('summary')
+                let close = document.getElementById('closeSummary')
+                function hideSummary() {
+                    modal.style.display = 'none'
+                }
+                close.onclick = hideSummary
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+            </div>
+            </body>        
+    <footer>You can email me at <a href="cg28102n@pace.edu"><i><h4>cg28102n@pace.edu</h4></i></a>.</footer>
+    </html>    
